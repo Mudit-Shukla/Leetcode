@@ -11,7 +11,7 @@ import java.util.Stack;
 
 public class ValidParenthesis {
     public static void main(String[] args) {
-        System.out.println(checkValidity("(()){}"));
+        System.out.println(checkValidity(")))()((("));
     }
 
     public static boolean checkValidity(String s){
