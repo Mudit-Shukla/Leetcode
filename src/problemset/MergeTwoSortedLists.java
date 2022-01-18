@@ -43,5 +43,36 @@ public class MergeTwoSortedLists {
 //        return list.next;
 
 
+        /**
+         * COMPLETED MERGE TWO SORTED LIST USING IN PLACE SORTING (LIKE MERGE SORT)
+         */
+
+//        if(l1==null)
+//            return l2;
+//        if(l2==null)
+//            return l1;
+
+//        ListNode root = l1.val>l2.val ? l2 : l1;
+//        ListNode currentPre = root;
+//        ListNode current = root.next;
+//        ListNode other = root==l1 ? l2 : l1;
+//
+//        while(current!=null) {
+//            if(current.val <= other.val) {
+//                current = current.next;
+//                currentPre = currentPre.next;
+//            } else {
+//                currentPre.next = other;
+//                other = current;
+//                current = currentPre.next;
+//
+//                current = current.next;
+//                currentPre = currentPre.next;
+//            }
+//        }
+//
+//        currentPre.next = other;
+//        return root;
+
     }
 }
