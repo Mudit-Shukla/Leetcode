@@ -9,7 +9,7 @@ package problemset;
 
 public class IntersectionOfLinkedList {
 
-    public ListNode getIntersection(ListNode l1, ListNode l2){
+//    public ListNode getIntersection(ListNode l1, ListNode l2){
 //        int size1 = 0;
 //        int size2 = 0;
 //        ListNode temp1 = l1;
@@ -47,4 +47,4 @@ public class IntersectionOfLinkedList {
 //        }
 //        return l2;
     }
-}
+
