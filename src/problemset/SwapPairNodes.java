@@ -9,6 +9,16 @@ package problemset;
 
 public class SwapPairNodes {
 
+
+    /**
+     *
+     * Example ->   1 ----> 2 -----> 3 ----> 4 -----> 5
+     * Output  ->   2 ----> 1 -----> 4 ----> 3 -----> 5
+     *
+     * We need to swap each pair
+     *
+     */
+
 //    public ListNode swapPairs(ListNode head) {
 //        ListNode dummyNode = new ListNode(0, head);
 //        ListNode current = dummyNode;
