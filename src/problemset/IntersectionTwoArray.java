@@ -33,8 +33,23 @@ public class IntersectionTwoArray {
                 d++;
         }
 
-        int[] array = new int[list.size()];
-        for(int i =0; i< list.size(); i++)
-            array[i] = list.get(i);
+        //  ORDER(n) TIME COMPLEXITY AND ORDER(2n) SPACE COMPLEXITY
+
+//        int[] array = new int[list.size()];
+//        for(int i =0; i< list.size(); i++)
+//            array[i] = list.get(i);
+//
+//        Set<Integer> set1 = new HashSet<Integer>();
+//        for (Integer n : nums1) set1.add(n);
+//        Set<Integer> set2 = new HashSet<Integer>();
+//        for (Integer n : nums2) set2.add(n);
+//
+//        set1.retainAll(set2);
+//
+//        int [] result = new int[set1.size()];
+//        int k = 0;
+//        for (int num : set1)
+//            result[k++] = num;
+//        return result;
     }
 }
