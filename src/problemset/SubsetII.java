@@ -16,7 +16,7 @@ public class SubsetII {
         int[] nums = {1,2,2};
         List<List<Integer>> result = new ArrayList<>();
         Arrays.sort(nums);
-        getSubsets(nums, result, nums.length, 0, new ArrayList<>());
+        getSubsets(nums, nums.length, 0, result, new ArrayList<>());
         for(List<Integer> ele : result)
             System.out.println(ele);
     }
@@ -32,5 +32,16 @@ public class SubsetII {
         getSubsets(nums, result, n, index+1, subsequence);
         subsequence.remove(subsequence.size()-1);
         getSubsets(nums, result, n, index+1, subsequence);
+    }
+
+    public static void getSubsets(int[] nums, int n, int index, List<List<Integer>> result, List<Integer> combination){
+        result.add(new ArrayList<>(combination));
+        for(int i = index; i < n; i++){
+            if(i > index && nums[i] == nums[i-1])
+                continue;
+            combination.add(nums[i]);
+            getSubsets(nums, n, i + 1, result, combination);
+            combination.remove(combination.size() - 1);
+        }
     }
 }
